@@ -1,11 +1,14 @@
 import './App.css';
 import {
   SplitScreenWrapper
-} from './SplitScreenWrapper';
+} from './components/SplitScreenWrapper';
+import {
+  RegularListWrapper
+} from './components/RegularListWrapper';
 
 function App() {
   return (
-  <SplitScreenWrapper />
+    <RegularListWrapper />
   );
 }
 
