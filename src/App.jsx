@@ -3,12 +3,17 @@ import {
   SplitScreenWrapper
 } from './components/SplitScreenWrapper';
 import {
-  RegularListWrapper
-} from './components/RegularListWrapper';
+  ListsWrapper
+} from './components/ListsWrapper';
+import {
+  Modal
+} from './components/Modal';
 
 function App() {
   return (
-    <RegularListWrapper />
+    <Modal>
+      Modal Container
+    </Modal>
   );
 }
 

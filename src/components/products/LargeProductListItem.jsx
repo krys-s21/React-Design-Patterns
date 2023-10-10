@@ -1,26 +1,17 @@
-import styled from 'styled-components';
-
-const Container =styled.div`
-    display:flex;
-`;
-const Pane =styled.div`
-    flex:${props=>props.weight};
-`;
-
-export const RegularList=({
-    children,
-    leftWeight = 1,
-    rightWeight = 1
-})=>{
-    const [left, right] = children;
+export const LargeProductListItem=({product})=>{
+    const {
+        name, 
+        price, 
+        description,
+        rating
+    } = product;
     return (
-        <Container>
-            <Pane weight={leftWeight}>
-                {left}
-            </Pane>
-            <Pane weight={rightWeight}>
-                {right}
-            </Pane>
-        </Container>
+        <>
+            <h3>{name}</h3>
+            <p>{price}</p>
+            <h3>Description:</h3>
+            <p>{description}</p>
+            <p>Average Rating: {rating}</p>
+        </>
     );
 }

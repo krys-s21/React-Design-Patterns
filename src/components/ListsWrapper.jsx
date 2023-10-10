@@ -1,9 +1,17 @@
 import { SmallPersonListItem } from './people/SmallPersonListItem';
 import { LargePersonListItem } from './people/LargePersonListItem';
+import { SmallProductListItem } from './products/SmallProductListItem';
+import { LargeProductListItem } from './products/LargeProductListItem';
+
 import {
   RegularList
 } from './RegularList';
 
+import {
+	NumberedList
+} from './NumberedList';
+
+  
 const people = [{
 	name: 'John Doe',
 	age: 54,
@@ -37,7 +45,7 @@ const products = [{
 	description: 'State-of-the-art technology for optimum running',
 	rating: 4.2,
 }];
-export const RegularListWrapper = () => {
+export const ListsWrapper = () => {
   return (
 	<>
 		<RegularList 
@@ -45,13 +53,23 @@ export const RegularListWrapper = () => {
 			resourceName="person"
 			itemComponent={SmallPersonListItem}
 		/>
-		<RegularList 
+		<NumberedList 
 			items={people}
 			resourceName="person"
 			itemComponent={LargePersonListItem}
+		/>
+		<RegularList 
+			items={products}
+			resourceName="product"
+			itemComponent={SmallProductListItem}
+		/>
+		<NumberedList 
+			items={products}
+			resourceName="product"
+			itemComponent={LargeProductListItem}
 		/>
 	</>
   );
 }
 
-export default RegularListWrapper;
+export default ListsWrapper;
