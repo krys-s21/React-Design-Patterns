@@ -14,13 +14,23 @@ import {
 import {
   UserInfo
 } from './components/container/UserInfo';
-
+import {
+  UserLoader
+} from './components/container/UserLoader';
 
 function App() {
   return (
-    <CurrentUserLoader>
+    <>
+    <UserLoader userId='1'>
       <UserInfo />
-    </CurrentUserLoader>
+    </UserLoader>
+    <UserLoader userId='2'>
+      <UserInfo />
+    </UserLoader>
+    <UserLoader userId='3'>
+      <UserInfo />
+    </UserLoader>
+    </>
   );
 }
 
