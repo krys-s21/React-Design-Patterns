@@ -17,19 +17,25 @@ import {
 import {
   UserLoader
 } from './components/container/UserLoader';
+import {
+  ResourceLoader
+} from './components/container/ResourceLoader';
+import {
+  ProductInfo
+} from './components/container/ProductInfo';
 
 function App() {
   return (
     <>
-    <UserLoader userId='1'>
+    <ResourceLoader resourceUrl="/users/1" resourceName="user">
       <UserInfo />
-    </UserLoader>
-    <UserLoader userId='2'>
+    </ResourceLoader>
+    <ResourceLoader resourceUrl="/products/1" resourceName="product">
+      <ProductInfo />
+    </ResourceLoader>
+    <ResourceLoader resourceUrl="/users/1" resourceName="user">
       <UserInfo />
-    </UserLoader>
-    <UserLoader userId='3'>
-      <UserInfo />
-    </UserLoader>
+    </ResourceLoader>
     </>
   );
 }
