@@ -8,12 +8,19 @@ import {
 import {
   Modal
 } from './components/layout/Modal';
+import {
+  CurrentUserLoader
+} from './components/container/CurrentUserLoader';
+import {
+  UserInfo
+} from './components/container/UserInfo';
+
 
 function App() {
   return (
-    <Modal>
-      Modal Container
-    </Modal>
+    <CurrentUserLoader>
+      <UserInfo />
+    </CurrentUserLoader>
   );
 }
 
