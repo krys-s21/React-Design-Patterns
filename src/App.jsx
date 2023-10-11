@@ -1,4 +1,5 @@
 import './App.css';
+import axios from 'axios';
 import {
   SplitScreenWrapper
 } from './components/layout/SplitScreenWrapper';
@@ -23,19 +24,14 @@ import {
 import {
   ProductInfo
 } from './components/container/ProductInfo';
+import {
+  DataSourceWrapper
+} from './components/container/DataSourceWrapper';
 
 function App() {
   return (
     <>
-    <ResourceLoader resourceUrl="/users/1" resourceName="user">
-      <UserInfo />
-    </ResourceLoader>
-    <ResourceLoader resourceUrl="/products/1" resourceName="product">
-      <ProductInfo />
-    </ResourceLoader>
-    <ResourceLoader resourceUrl="/users/1" resourceName="user">
-      <UserInfo />
-    </ResourceLoader>
+      <DataSourceWrapper />
     </>
   );
 }
