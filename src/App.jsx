@@ -29,12 +29,13 @@ import './App.css';
 // } from './components/container/DataSourceWrapper';
 
 // import { UncontrolledForm } from './components/uncontrolled/UncontrolledForm';
-import { ControlledForm } from './components/controlled/ControlledForm';
+// import { ControlledForm } from './components/controlled/ControlledForm';
+import { ControlledModalWrapper } from './components/controlled/ControlledModalWrapper';
 
 function App() {
   return (
     <>
-      <ControlledForm />
+      <ControlledModalWrapper />
     </>
   );
 }
