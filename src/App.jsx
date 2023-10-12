@@ -28,10 +28,12 @@ import {
   DataSourceWrapper
 } from './components/container/DataSourceWrapper';
 
+import { UncontrolledForm } from './components/uncontrolled/UncontrolledForm';
+
 function App() {
   return (
     <>
-      <DataSourceWrapper />
+      <UncontrolledForm />
     </>
   );
 }
