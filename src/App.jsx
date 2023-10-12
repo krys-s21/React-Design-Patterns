@@ -30,13 +30,12 @@ import './App.css';
 
 // import { UncontrolledForm } from './components/uncontrolled/UncontrolledForm';
 // import { ControlledForm } from './components/controlled/ControlledForm';
-import { ControlledModalWrapper } from './components/controlled/ControlledModalWrapper';
+// import { ControlledModalWrapper } from './components/controlled/ControlledModalWrapper';
+import { UncontrolledOnboardingFlowWrapper } from './components/uncontrolled/UncontrolledOnboardingFlowWrapper';
 
 function App() {
   return (
-    <>
-      <ControlledModalWrapper />
-    </>
+      <UncontrolledOnboardingFlowWrapper/>
   );
 }
 
