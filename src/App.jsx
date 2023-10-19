@@ -15,9 +15,9 @@ import './App.css';
 // import {
 //   CurrentUserLoader
 // } from './components/container/CurrentUserLoader';
-// import {
-//   UserInfo
-// } from './components/container/UserInfo';
+import {
+  UserInfo
+} from './components/container/UserInfo';
 // import {
 //   UserLoader
 // } from './components/container/UserLoader';
@@ -35,10 +35,10 @@ import './App.css';
 // import { ControlledForm } from './components/controlled/ControlledForm';
 // import { ControlledModalWrapper } from './components/controlled/ControlledModalWrapper';
 // import { UncontrolledOnboardingFlowWrapper } from './components/uncontrolled/UncontrolledOnboardingFlowWrapper';
-import { UserInfoForm } from './components/highOrder/UserInfoForm';
+// import { UserInfoForm } from './components/highOrder/UserInfoForm';
 function App() {
   return (
-      <UserInfoForm />
+      <UserInfo />
   );
 }
 
