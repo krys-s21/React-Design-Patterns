@@ -1,7 +1,7 @@
-import { useCurrentUser } from "../../customHooks/useCurrentUser";
-
-export const UserInfo = () => {
-    const user=useCurrentUser();
+// import { useCurrentUser } from "../../customHooks/useCurrentUser";
+import { useUser } from "../../customHooks/useUser";
+export const UserInfo = ({userId}) => {
+    const user = useUser(userId);
     const {name, age, hairColor,  hobbies} = user || {};
     return user ? (
         <> 

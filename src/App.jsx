@@ -38,7 +38,11 @@ import {
 // import { UserInfoForm } from './components/highOrder/UserInfoForm';
 function App() {
   return (
-      <UserInfo />
+    <>
+      <UserInfo userId="1"/>
+      <UserInfo userId="2"/>
+      <UserInfo userId="3"/>
+    </>
   );
 }
 
