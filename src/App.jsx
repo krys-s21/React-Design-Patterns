@@ -15,33 +15,30 @@ import './App.css';
 // import {
 //   CurrentUserLoader
 // } from './components/container/CurrentUserLoader';
-import {
-  UserInfo
-} from './components/container/UserInfo';
+// import {
+//   UserInfo
+// } from './components/container/UserInfo';
 // import {
 //   UserLoader
 // } from './components/container/UserLoader';
 // import {
 //   ResourceLoader
 // } from './components/container/ResourceLoader';
-import {
-  ProductInfo
-} from './components/container/ProductInfo';
+// import {
+//   ProductInfo
+// } from './components/container/ProductInfo';
 // import {
 //   DataSourceWrapper
 // } from './components/container/DataSourceWrapper';
-
 // import { UncontrolledForm } from './components/uncontrolled/UncontrolledForm';
 // import { ControlledForm } from './components/controlled/ControlledForm';
 // import { ControlledModalWrapper } from './components/controlled/ControlledModalWrapper';
 // import { UncontrolledOnboardingFlowWrapper } from './components/uncontrolled/UncontrolledOnboardingFlowWrapper';
 // import { UserInfoForm } from './components/highOrder/UserInfoForm';
+import { RecursiveComponentWrapper } from './components/functional/RecursiveComponentWrapper';
 function App() {
   return (
-    <>
-      <UserInfo userId="1" />
-      <ProductInfo productId="1" />
-    </>
+      <RecursiveComponentWrapper />
   );
 }
 
