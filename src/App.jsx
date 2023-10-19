@@ -1,5 +1,7 @@
 import './App.css';
-import { ControlledOnboardingFlowWrapper } from './components/controlled/ControlledOnboardingFlowWrapper';
+// import { ControlledOnboardingFlowWrapper } from './components/controlled/ControlledOnboardingFlowWrapper';
+// import { PrintPropsWrapper } from './components/highOrder/printPropsWrapper';
+import { WithUserWrapper } from './components/highOrder/withUserWrapper';
 // import axios from 'axios';
 // import {
 //   SplitScreenWrapper
@@ -36,7 +38,7 @@ import { ControlledOnboardingFlowWrapper } from './components/controlled/Control
 
 function App() {
   return (
-      <ControlledOnboardingFlowWrapper />
+      <WithUserWrapper />
   );
 }
 
