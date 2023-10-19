@@ -24,9 +24,9 @@ import {
 // import {
 //   ResourceLoader
 // } from './components/container/ResourceLoader';
-// import {
-//   ProductInfo
-// } from './components/container/ProductInfo';
+import {
+  ProductInfo
+} from './components/container/ProductInfo';
 // import {
 //   DataSourceWrapper
 // } from './components/container/DataSourceWrapper';
@@ -39,9 +39,8 @@ import {
 function App() {
   return (
     <>
-      <UserInfo userId="1"/>
-      <UserInfo userId="2"/>
-      <UserInfo userId="3"/>
+      <UserInfo userId="1" />
+      <ProductInfo productId="1" />
     </>
   );
 }

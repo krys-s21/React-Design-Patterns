@@ -1,7 +1,9 @@
 // import { useCurrentUser } from "../../customHooks/useCurrentUser";
-import { useUser } from "../../customHooks/useUser";
+// import { useUser } from "../../customHooks/useUser";
+import { useResource } from "../../customHooks/useResource";
+
 export const UserInfo = ({userId}) => {
-    const user = useUser(userId);
+    const user = useResource(`/users/${userId}`);
     const {name, age, hairColor,  hobbies} = user || {};
     return user ? (
         <> 
