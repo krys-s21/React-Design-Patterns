@@ -1,7 +1,7 @@
 import './App.css';
 // import { ControlledOnboardingFlowWrapper } from './components/controlled/ControlledOnboardingFlowWrapper';
 // import { PrintPropsWrapper } from './components/highOrder/printPropsWrapper';
-import { WithUserWrapper } from './components/highOrder/withUserWrapper';
+// import { WithUserWrapper } from './components/highOrder/withUserWrapper';
 // import axios from 'axios';
 // import {
 //   SplitScreenWrapper
@@ -35,10 +35,10 @@ import { WithUserWrapper } from './components/highOrder/withUserWrapper';
 // import { ControlledForm } from './components/controlled/ControlledForm';
 // import { ControlledModalWrapper } from './components/controlled/ControlledModalWrapper';
 // import { UncontrolledOnboardingFlowWrapper } from './components/uncontrolled/UncontrolledOnboardingFlowWrapper';
-
+import { UserInfoForm } from './components/highOrder/UserInfoForm';
 function App() {
   return (
-      <WithUserWrapper />
+      <UserInfoForm />
   );
 }
 
