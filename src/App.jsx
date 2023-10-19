@@ -35,10 +35,12 @@ import './App.css';
 // import { ControlledModalWrapper } from './components/controlled/ControlledModalWrapper';
 // import { UncontrolledOnboardingFlowWrapper } from './components/uncontrolled/UncontrolledOnboardingFlowWrapper';
 // import { UserInfoForm } from './components/highOrder/UserInfoForm';
-import { RecursiveComponentWrapper } from './components/functional/RecursiveComponentWrapper';
+// import { RecursiveComponentWrapper } from './components/functional/RecursiveComponentWrapper';
+
+import { CompositionWrapper } from './components/functional/CompositionWrapper';
 function App() {
   return (
-      <RecursiveComponentWrapper />
+      <CompositionWrapper />
   );
 }
 
